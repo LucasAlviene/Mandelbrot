@@ -27,40 +27,12 @@ int main()
 	return 0;
 }
 
-int *teste()
-{
-
-	int *i = malloc(sizeof(int) * 2);
-
-	i[0] = 5;
-	i[1] = 20;
-	return i;
-}
-
 double center_x = -1.04082816210546;
 double center_y = 0.346341718848392;
 
 int *mandelbrot(int width, int height, double factor)
 {
 	static int *vector = 0;
-
-	// int width = 379; // number of characters fitting horizontally on my screen
-	// int height = 98; // number of characters fitting vertically on my screen
-
-	// double x_start = -2.0;
-	// double x_fin = 1.0;
-	// double y_start = -1.0;
-	// double y_fin = 1.0;
-
-	//~ double x_start = -0.25;
-	//~ double x_fin = 0.05;
-	//~ double y_start = -0.95;
-	//~ double y_fin = -0.75;
-
-	//~ double x_start = -0.13;
-	//~ double x_fin = -0.085;
-	//~ double y_start = -0.91;
-	//~ double y_fin = -0.88;
 
 	double x_start = center_x - 1.5 * factor;
 	double x_fin = center_x + 1.5 * factor;
