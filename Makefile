@@ -14,7 +14,7 @@ windows32: install_python32 compile_windows
 	python32 main.py
 
 compile_linux: install_python
-	cc -FPIC -shared -o Mandelbrot.o Mandelbrot.c
+	cc -fPIC -shared -o Mandelbrot.o Mandelbrot.c
 
-linux:
+linux: compile_linux
 	python3 main.py
