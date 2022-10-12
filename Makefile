@@ -1,14 +1,20 @@
-install: Mandelbrot.o
+install_python:
 	pip install -r requirements.txt
 
-install32: Mandelbrot.o
+install_python32:
 	python32 -m pip install -r requirements.txt
 
-Mandelbrot.o: 
-	gcc -shared -o Mandelbrot.o .\Mandelbrot.c
+compile_windows: 
+	gcc -shared -o Mandelbrot.o Mandelbrot.c
 
-start: install
-	python .\main.py
+windows: install_python compile_windows
+	python main.py
 
-start32: install32
-	python32 .\main.py
+windows32: install_python32 compile_windows
+	python32 main.py
+
+compile_linux: install_python
+	cc -FPIC -shared -o Mandelbrot.o Mandelbrot.c
+
+linux:
+	python3 main.py
