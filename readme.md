@@ -32,5 +32,7 @@ math, sdl2
 
 ## Fontes
 Mandelbrot (Algoritmo): https://github.com/dario-marvin/Mandelbrot
+
 CTypes (Conexão Python-C): https://www.digitalocean.com/community/tutorials/calling-c-functions-from-python 
+
 Pysdl2 (Interface): https://www.youtube.com/watch?v=AQsIU1OUyCE 
