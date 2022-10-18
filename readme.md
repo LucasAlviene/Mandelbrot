@@ -5,9 +5,11 @@ No **Python** é renderizado a interface, no **C** é feito o calculo de Mandelb
 Utilizamos o **ctypes** para a comunicação entre as duas linguagens.
 
 ## Arquivos
-Mandelbrot.c: Algoritmo de calculo do Mandelbrot.
-main.py: Interface do programa.
-Mandelbrot.py: Configuração da comunicação do **Python** com **C**.
+**Mandelbrot.c:** Algoritmo de calculo do Mandelbrot.
+
+**main.py:** Interface do programa.
+
+**Mandelbrot.py:** Configuração da comunicação do **Python** com **C**.
 
 ## Compilar e Executar
 
@@ -22,8 +24,13 @@ E tente rodar o **main.py** usando o Python 32bits.
 
 
 #### Linux
-No linux é mais fácil e direito, só execute o comando:
+No linux é mais fácil e direito, só executar o comando:
 ```$ make linux```
 
 ## Pacotes do python utilizados
 math, sdl2
+
+## Fontes
+Mandelbrot (Algoritmo): https://github.com/dario-marvin/Mandelbrot
+CTypes (Conexão Python-C): https://www.digitalocean.com/community/tutorials/calling-c-functions-from-python 
+Pysdl2 (Interface): https://www.youtube.com/watch?v=AQsIU1OUyCE 
